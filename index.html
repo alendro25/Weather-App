@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Fonts Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container p-3 my-3">
+        <h2 class="text-title">Weather App</h2>
+        <div class="input-group">
+            <input type="text" class="form-control" id="city">
+            <button type="button" class="btn btn btn-outline-primary" id="send">
+                Check !!!
+            </button>
+        </div>
+
+        <br>
+        <div class="d-flex justify-content-between">
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input weather" name="weather" id="current_weather" checked>
+            <label for="current_weather">
+              Current Weather
+            </label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input forecast" name="forecast" id="weather_forecast">
+            <label for="weather_forecast">
+              Weather Forecast
+            </label>
+          </div>
+        </div>
+
+        <div class="card mt-4 d-none" id="weather-container">
+          <div class="card-body mx-auto">
+            <h2 class="text-title">City, Surabaya</h2>
+            <p>
+              Current Temperature : 30 ℃
+              <br>
+              Feels Like : 35.48 ℃
+              <br>
+              Min : 28.95 ℃ , Max : 28.95 ℃
+            </p>
+            Overcast Clouds <img src="assets/dummyclouds.png" alt="weather">
+          </div>
+        </div>
+
+        <div class="card mt-4 d-none" id="forecast-container">
+          <div class="card-body">
+            <h2 class="text-title text-center">City, Surabaya</h2>
+            <table class="table table-hover">
+              <tbody id="body">
+                <tr>
+                  <td><img src="assets/dummyclouds.png" alt=""></td>
+                  <td>
+                    <i class="fa fa-calender-check-o" aria-hidden="true"></i>22 April 2022 <br>
+                    <i class="fa fa-clock-o" aria-hidden="true">17.00</i>
+                  </td>
+                  <td>
+                    <h5 class="text-info">22.87 ℃ <br> <small>Min: 22.87 ℃ Max: 22.87℃</small></h5>
+                  </td>
+                  <td>
+                    Clouds <br> Overcast Clouds
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card-body">
+            <h2 class="text-title text-center">City, Surabaya</h2>
+            <table class="table table-hover">
+              <tbody id="body">
+                <tr>
+                  <td><img src="assets/dummyclouds.png" alt=""></td>
+                  <td>
+                    <i class="fa fa-calender-check-o" aria-hidden="true"></i>22 April 2022 <br>
+                    <i class="fa fa-clock-o" aria-hidden="true">17.00</i>
+                  </td>
+                  <td>
+                    <h5 class="text-info">22.87 ℃ <br> <small>Min: 22.87 ℃ Max: 22.87℃</small></h5>
+                  </td>
+                  <td>
+                    Clouds <br> Overcast Clouds
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="card-body">
+            <h2 class="text-title text-center">City, Surabaya</h2>
+            <table class="table table-hover">
+              <tbody id="body">
+                <tr>
+                  <td><img src="assets/dummyclouds.png" alt=""></td>
+                  <td>
+                    <i class="fa fa-calender-check-o" aria-hidden="true"></i>22 April 2022 <br>
+                    <i class="fa fa-clock-o" aria-hidden="true">17.00</i>
+                  </td>
+                  <td>
+                    <h5 class="text-info">22.87 ℃ <br> <small>Min: 22.87 ℃ Max: 22.87℃</small></h5>
+                  </td>
+                  <td>
+                    Clouds <br> Overcast Clouds
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <!-- My Script -->
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
